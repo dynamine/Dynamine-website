@@ -77,7 +77,8 @@ WSGI_APPLICATION = 'dynamine_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'info_site_db'
+        'NAME': 'info_site_db',
+	    'HOST': '35.197.14.170'
     }
 }
 

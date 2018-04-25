@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Dynamine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('static/info_site/coin_bg.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.logoimg {
+  width: 40px;
+  height: auto;
+  filter: invert(100%);
+}
+
+.center-text{
+  text-align: center;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle center-text">
+    <h1 class="w3-jumbo w3-animate-top"><span>Cluster Overview Page</span></h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">Coming Soon</p>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <a href="/cluster/logout">Logout</a>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    &#169 Dynamine inc.
+  </div>
+</div>
+
+</body>
+</html>

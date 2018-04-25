@@ -19,5 +19,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('', include('info_site.urls')),
+    path('cluster/', include('cluster_admin.urls')),
     path('admin/', admin.site.urls),
 ]

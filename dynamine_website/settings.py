@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'templates')
+            os.path.join(BASE_DIR, 'templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,3 +126,6 @@ STATIC_URL = '/static/'
 # Redirect to cluster admin page after Login
 LOGIN_REDIRECT_URL = '/cluster/overview'
 LOGOUT_REDIRECT_URL = '/cluster/login'
+
+# Configuring custom model for cluster user
+#AUTH_USER_MODEL = 'cluster_admin.ClusterAdmin'

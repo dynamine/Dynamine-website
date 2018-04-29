@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>About Page</h1>
+<style>
+	body {
+		background-color: #777777;
+	}
+	.column {
+		float: left;
+		width: 50%;
+		padding: 10%;
+	}
+</style>
+<div class="row">
+	<div class="column"><h1 class="w3-jumbo w3-animate-top w3-center"><span>About <img height="60%" width="60%" src="static/info_site/dynamineFullBlack.png" alt=""/></span></h1></div>
+	<div class="column"><p class="w3-large w3-center">With Dynamine, we aim to help you take full advantage of the hardware you already have to begin mining for cryptocurrencies. With our product, even a less-than tech literate person will be able to set up their machine to make a profit while they are not using it</p></div>
+</div>
 {% endblock %}

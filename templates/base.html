@@ -3,8 +3,58 @@
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Dynamine{% endblock %}</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('static/info_site/coin_bg.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .logoimg {
+      width: 40px;
+      height: auto;
+      filter: invert(100%);
+    }
+
+    .center-text{
+      text-align: center;
+    }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	}
+
+	li {
+	    float: left;
+	}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	}
+
+	li a:hover {
+	    background-color: #41526D;
+	}
+  </style>
 </head>
 <body>
+  <ul>
+  	<li><a href="/">Home</a></li>
+  	<li><a href="/about">About</a></li>
+  </ul>
   <main>
     {% block content %}
     {% endblock %}

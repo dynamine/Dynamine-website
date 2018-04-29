@@ -1,8 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
 <!-- templates/registration/login.html -->
-<h2>Login</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Login</button>
-</form>
-<a href="/cluster/create">Create a New Cluster</a>
+<style>
+	body {
+		background-color: #777777;
+	}
+	.login {
+		text-align: center;
+		padding: 10%;
+	}
+</style>
+<div class="login">
+	<h2>Login</h2>
+	<form method="post">
+	  {% csrf_token %}
+	  {{ form.as_p }}
+	  <button type="submit">Login</button>
+	</form>
+	<a href="/cluster/create">Create a New Cluster</a>
+</div>
+{% endblock %}

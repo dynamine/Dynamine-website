@@ -25,7 +25,7 @@ SECRET_KEY = 'jgr-h98s%497djs@54-y+%!tril$gg7ndqbr=ruvymw60s9=4i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'dynamine.io', '35.230.91.87']
 
 
 # Application definition

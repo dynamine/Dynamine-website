@@ -12,3 +12,7 @@ def about(request):
 def downloads(request):
     context = {}
     return render(request, 'info_site/downloads.html', context)
+
+def walkthrough(request):
+	context = {}
+	return render(request, 'info_site/walkthrough.html', context)

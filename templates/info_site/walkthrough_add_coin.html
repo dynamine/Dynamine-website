@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style type="text/css">
+#parent {
+    width: 900px;
+    height: 600px;
+    border-color: black;
+    border-width: 1px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+#child {
+    text-align: center;
+}
+img {
+    width: 70%;
+ }
+</style>
+<div id="parent">
+	<div id="child">
+		<h1 class="w3-jumbo w3-animate-top">How to add coin</h1>
+        <img src="static/info_site/add_coin_screen.png"><br>
+        <h3>First, you will need to select which coin you are wanting to mine, there are resources online to find what coin could be most profitable for you such as <a href="https://whattomine.com/">this</a>. But for starters we would suggest for you to start with Ethereum</h2>
+        <button><a href="walkthrough_install">BACK</button>
+		<button><a href="walkthrough_add_coin_1">NEXT</button>
+	</div>
+</div>
+{% endblock %}

@@ -16,3 +16,19 @@ def downloads(request):
 def walkthrough(request):
 	context = {}
 	return render(request, 'info_site/walkthrough.html', context)
+
+def walkthrough_install(request):
+	context = {}
+	return render(request, 'info_site/walkthrough_install.html', context)
+
+def walkthrough_add_coin(request):
+	context = {}
+	return render(request, 'info_site/walkthrough_add_coin.html', context)
+
+def walkthrough_add_coin_1(request):
+	context = {}
+	return render(request, 'info_site/walkthrough_add_coin_1.html', context)
+
+def walkthrough_add_coin_2(request):
+	context = {}
+	return render(request, 'info_site/walkthrough_add_coin_2.html', context)

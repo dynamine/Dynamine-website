@@ -2,22 +2,29 @@
 
 {% block content %}
 <style type="text/css">
-	#parent {position: relative;}
-#child {
+#parent {
+    width: 700px;
+    height: 300px;
+    border-color: black;
+    border-width: 1px;
+
     position: absolute;
-    top: 0;
+    top:0;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 50%;
-    height: 30%;
+
     margin: auto;
 }
+#child {
+    text-align: center;
+}
+
 </style>
 <div id="parent">
 	<div id="child">
 		<h1 class="w3-jumbo w3-animate-top">Walkthrough</h1>
-		<button>BEGIN</button>
+		<button><a href="walkthrough_install">BEGIN</button>
 	</div>
 </div>
 {% endblock %}

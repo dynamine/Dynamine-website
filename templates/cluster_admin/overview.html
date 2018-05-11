@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>Dynamine</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('{% static "cluster_admin/cave_bg.jpg" %}');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.logoimg {
+  width: 40px;
+  height: auto;
+  filter: invert(100%);
+}
+
+.center-text{
+  text-align: center;
+}
+
+.delete-icon{
+}
+
+table{
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  height: 50px;
+  border: 1px solid #dddddd;
+}
+
+tr:nth-child(odd) {
+  background-color: #727272;
+}
+
+tr:nth-child(even) {
+  background-color: #9e9e9e;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle center-text">
+    <h1 class="w3-jumbo w3-animate-top"><span>Manage Cluster</span></h1>
+<table style="width:100%" align="center">
+  <tr>
+    <th>IP Address</th>
+    <th>Hardware</th> 
+    <th>Coins</th>
+    <th>Delete?</th>
+  </tr>
+  <tr>
+    <td>102.33.197.011</td>
+    <td>GTX 1080</td> 
+    <td>ETH, LTC</td>
+    <td><img class='delete-icon' height="60%" src='{% static "cluster_admin/delete.png" %}' alt=""/></td>
+  </tr>
+  <tr>
+    <td>34.87.110.45</td>
+    <td>GTX 1070 Ti</td> 
+    <td>LTC, XMR</td>
+    <td><img class='delete-icon' height="60%" src='{% static "cluster_admin/delete.png" %}' alt=""/></td>
+  </tr>
+  <tr>
+    <td>197.80.22.110</td>
+    <td>GTX 1080 Ti</td> 
+    <td>BTC, LTC</td>
+    <td><img class='delete-icon' height="60%" src='{% static "cluster_admin/delete.png" %}' alt=""/></td>
+  </tr>
+  <tr>
+    <td>45.60.90.150</td>
+    <td>GTX 1070 Ti</td> 
+    <td>BTC, LTC</td>
+    <td><img class='delete-icon' height="60%" src='{% static "cluster_admin/delete.png" %}' alt=""/></td>
+  </tr>
+  <tr>
+    <td>120.122.97.15</td>
+    <td>GTX 1070</td> 
+    <td>LTC</td>
+    <td><img class='delete-icon' height="60%" src='{% static "cluster_admin/delete.png" %}' alt=""/></td>
+  </tr>
+</table>
+<div><img src='{% static "cluster_admin/graph.png" %}' alt=""/></div>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    &#169 Dynamine inc.
+  </div>
+</div>
+
+</body>
+</html>

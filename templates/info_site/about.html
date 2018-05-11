@@ -8,13 +8,42 @@
 		padding: 10%;
 	}
 	.logoimg {
-		height: 60%;
-		width: 60%;
+		width: 15%;
 		filter: invert(100%);
 	}
+
+	#about-scroll {
+		background-color: #DDDDDD;
+		border-radius: 8px;
+		margin: auto;
+	    width: 80%;
+	    padding: 10px;
+	    color:black ;
+	}
+
+	#mission {
+		width: 40%;
+		margin: auto;
+		padding: 10px;
+	}
 </style>
-<div class="row">
-	<div class="column"><h1 class="w3-jumbo w3-animate-top w3-center"><span>About <img class="logoimg"  src="static/info_site/dynamine_full_color.png" alt=""/></span></h1></div>
-	<div class="column"><p class="w3-large w3-center">With Dynamine, we aim to help you take full advantage of the hardware you already have to begin mining for cryptocurrencies. With our product, even a less-than tech literate person will be able to set up their machine to make a profit while they are not using it</p></div>
+<h1 class="w3-jumbo w3-animate-top w3-center">About <br><img class="logoimg"  src="static/info_site/dynamine_full_color.png" alt=""/></h1>
+<div id="about-scroll" class="w3-center">
+	<div id="mission">
+		<h3>Mission Statement</h3>
+		<p>With Dynamine, we aim to help you take full advantage of the hardware you already have to begin mining for cryptocurrencies. With our product, even a less-than tech literate person will be able to set up their machine to make a profit while they are not using it.</p><br>
+		<h3>What is Cryptocurrency?</h3>
+		<p style="text-align: left;">&#9654 An Internet-based medium of exchange distinct from physical (such as banknotes and coins) that exhibits properties similar to physical currencies, but allows for instantaneous transactions and borderless transfer-of-ownership.<br>
+		&#9654 A digital currency in which encryption techniques (cryptography) are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank</p><br><br><br><br>
+		<img src="static/info_site/architecture.png"><br><br><br>
+		<h3>What is Cryptocurrency Mining?</h3>
+		<p style="text-align: left;">&#9654 To make up for the absence of a centralized banking industry, there must be another way to validate transactions<br>
+			&#9654 This is done through a series of mathematical equations that are completed by computer hardware that form the blockchain<br>
+			&#9654 Without “miners” to solve these equations, the blockchain would not be realistic. The system creates incentive for miners to do this by rewarding them with the cryptocurrency they are validating<br></p>
+		<h3>Why is Pooling Important?</h3>
+		<p style="text-align: left;">&#9654 Due to the hashing power required to do these complex mathematical equations, it is no longer practical to mine by yourself<br>
+		&#9654 This is solved through the pooling of resources together with others mining the same cryptocurrency to increase their chance of completing a block, and therefore increasing their payout<br>
+
+	</div>
 </div>
 {% endblock %}

@@ -32,3 +32,7 @@ def walkthrough_add_coin_1(request):
 def walkthrough_add_coin_2(request):
 	context = {}
 	return render(request, 'info_site/walkthrough_add_coin_2.html', context)
+
+def walkthrough_end(request):
+	context = {}
+	return render(request, 'info_site/walkthrough_end.html', context)
